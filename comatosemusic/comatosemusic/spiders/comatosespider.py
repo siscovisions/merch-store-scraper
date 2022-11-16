@@ -24,7 +24,3 @@ class ComatosespiderSpider(scrapy.Spider):
         if next_page is not None:
             next_page_url = next_page
             yield response.follow(next_page_url, callback=self.parse)
-
-
-#PRICE
-#price = product.css('h6.card-subtitle').get()
